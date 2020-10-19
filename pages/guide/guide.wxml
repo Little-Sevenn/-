@@ -1,0 +1,83 @@
+<!--上方导航框-->
+<view class="navigationbar">
+  <scroll-view class='scr_top' scroll-x="true" scroll-with-animation="true" scroll-left="{{scrollLeft}}">
+
+      <view class="box" bindtap="change_BigSites" data-index="0">
+        <view class="caption {{0==tab_Cur?'tab_on':''}}">{{BigSites[0].caption }}</view>
+      </view> 
+      <view class="box" bindtap="change_BigSites" data-index="1">
+        <view class="caption {{1==tab_Cur?'tab_on':''}}">{{BigSites[1].caption }}</view>
+      </view> 
+      <view class="box" bindtap="change_BigSites" data-index="2">
+        <view class="caption {{2==tab_Cur?'tab_on':''}}">{{BigSites[2].caption }}</view>
+      </view> 
+      <view class="box" bindtap="change_BigSites" data-index="3">
+        <view class="caption {{3==tab_Cur?'tab_on':''}}">{{BigSites[3].caption }}</view>
+      </view> 
+      <view class="box" bindtap="change_BigSites" data-index="4">
+        <view class="caption {{4==tab_Cur?'tab_on':''}}">{{BigSites[4].caption }}</view>
+      </view> 
+      <view class="box" bindtap="change_BigSites" data-index="5">
+        <view class="caption {{5==tab_Cur?'tab_on':''}}">{{BigSites[5].caption }}</view>
+      </view> 
+      <view class="box" bindtap="change_BigSites" data-index="6">
+        <view class="caption {{6==tab_Cur?'tab_on':''}}">{{BigSites[6].caption }}</view>
+      </view> 
+
+  </scroll-view>
+</view>  
+
+<!--引入map组件-->
+<!--下拉框被点击的话，地图界面要进行调整-->
+<map 
+  id="map"
+  latitude="{{Latitude}}"  
+  longitude="{{Longitude}}" 
+  scale="{{Scale}}" 
+  markers='{{markers}}' 
+  bindmarkertap='markertap'  
+  class="{{isChecked?'mapsmall':'mapbig'}}" 
+  enable-3D="true">
+  <!--自定义气泡框-->
+  <cover-view slot="callout">
+    <block wx:for="{{names_sites}}" wx:key="names_sites">
+      <cover-view  class="customCallout" marker-id="{{item.id}}" >
+        <cover-view class="content"> 
+          {{item.name}}
+        </cover-view>
+      </cover-view>
+    </block>
+  </cover-view>
+
+  <!--search 按钮 -->
+  <cover-view>
+    <cover-image  class="search" src="/image/search.png" mode="scaletoFill" bindtap="search"></cover-image>
+  </cover-view>
+</map>
+
+
+
+<!-- 文本框：地点的个数 -->
+ <view class='icon_down' bindtap='change'>
+  <text class="sites_caption" decode="true">共有{{num}}个地点&nbsp;</text>
+  <image src='{{img}}' mode="scaletoFill"></image>
+</view> 
+
+<!-- 竖向滑动框：地址信息 --> 
+<view style='width=100%;' hidden='{{!isSpread}}'>
+  <scroll-view class='scr' scroll-y="true" scroll-with-animation="true" scroll-top="{{scrollTop}}">
+    <block wx:for="{{sites}}" wx:key="sites" id="item" > 
+
+      <view class="item {{item.display?'item2':''}}" data-index="{{index}}">
+        <navigator bindtap="navigator" open-type="navigate"  url = "{{info}}"  data-index="{{index}}">
+          <image  class='building' src="{{item.building}}"></image>
+          <text class="item_text">{{item.caption}}</text>
+        </navigator>
+        <navigator bindtap="go_guide" open-type="navigate" url="/pages/map/map" data-index="{{index}}">
+          <image  data-index="{{index}}" class='icon_goto' src="{{item.icon_goto}}"></image>
+        </navigator>
+      </view>
+      
+    </block>
+  </scroll-view>
+</view>  

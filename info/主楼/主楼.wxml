@@ -1,0 +1,20 @@
+<!--info/主楼/主楼.wxml-->
+<view class="bg">
+  <image class="img" mode="scaleToFill" src="https://www.zx95.net/images/2020/10/09/main_building.jpg"> </image>
+</view>
+
+<view class="intro">
+  <text class="head"  decode="{{true}}" >  &nbsp;&nbsp;主&nbsp;楼&nbsp;H&nbsp;栋</text>
+  <text decode="{{true}}">
+    &nbsp;&nbsp;简介：主楼为框架结构，属"前苏联社会主义民族建筑风格,建筑风格偏于古典，吸收并折衷了欧洲多种建筑风格，以高大、庄严、神秘的气势取胜。
+  </text>
+  <view>
+    <text decode="{{true}}">&nbsp;&nbsp; 主要功能：</text>
+  </view>
+  <view>
+    <text decode="{{true}}">&nbsp;&nbsp; 开放时间：</text>
+  </view>
+  <view>
+    <text decode="{{true}}">&nbsp;&nbsp; 独特体验：</text>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--自定义标题栏-->
+<view class="head" >
+  <text class="caption"> 哈工大(深圳)掌上校园</text>
+</view>
+
+<!--定义轮播图-->
+<swiper class="swiper">
+  <swiper-item class="swiper_item"> <image class="img2" mode="scaleToFill" src="https://pic.downk.cc/item/5f66c04c160a154a67d356d3.png" /> </swiper-item>
+  <swiper-item class="swiper_item"> <image class="img1" mode="scaleToFill" src="https://pic.downk.cc/item/5f66c04c160a154a67d356cc.png" /> </swiper-item>
+  <swiper-item class="swiper_item"> <image class="img3" mode="scaleToFill" src="https://pic.downk.cc/item/5f66c04c160a154a67d356d1.png" /> </swiper-item>
+  <swiper-item class="swiper_item"> <image class="img4" mode="scaleToFill" src="https://pic.downk.cc/item/5f66c04c160a154a67d356ca.png" /> </swiper-item>
+</swiper>
+
+<!--定义页面跳转导航栏-->
+<view class="navigation-bar">
+  <!--switchTab：支持TabBar页面间跳转     scaleToFill:自定义图片大小-->
+  <navigator class="nav"  bindtap="coming" open-type="switchTab" url="/pages/guide/guide">
+    <image class="img" src="../../icon/new_stu.png" mode="scaleToFill"></image>
+    <view>报道点</view>
+  </navigator>
+
+  <navigator class="nav " bindtap="dormitory" open-type="switchTab" url="/pages/guide/guide?which=1">
+    <image class="img" src="../../icon/dormitory.png" mode="scaleToFill"></image>
+    <view>
+      <text decode="{{true}}">&nbsp;&nbsp;宿舍</text>
+    </view>
+  </navigator>
+
+  <navigator class="nav" bindtap="dining" open-type="switchTab" url="/pages/guide/guide">
+    <image class="img" src="../../icon/dining.png" mode="scaleToFill"></image>
+    <view>
+      <text decode="{{true}}">&nbsp;&nbsp;食堂</text>
+    </view>
+  </navigator>
+
+  <navigator class="nav " bindtap="teaching" open-type="switchTab" url="/pages/guide/guide">
+    <image class="img" src="../../icon/learning.png" mode="scaleToFill"></image>
+    <view >教学楼</view>
+  </navigator>
+</view>

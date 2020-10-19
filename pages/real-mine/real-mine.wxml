@@ -1,0 +1,9 @@
+<!--自定义标题栏-->
+<view class="head" >
+  <text class="caption"> 哈工大(深圳)掌上校园</text>
+</view>
+ 
+ <button class="button" plain="true"> 解密X校园 </button> 
+ <button class="button" plain="true"> 宿舍教室内景 </button>  
+ <button class="button" plain="true"> 地点闹钟 </button> 
+ <button open-type="contact" class="button" plain="true"> 我要反馈</button> 

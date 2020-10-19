@@ -1,0 +1,20 @@
+/* pages/map/map.wxss */
+.map{
+  width: 100%;
+  height: 100vh;
+}
+
+.customCallout {
+  box-sizing: border-box;
+  background-color: #fff; 
+  border: 1px solid #888888;
+  border-radius: 20px;
+  height: 50rpx;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0.5;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  text-align: center;
+}

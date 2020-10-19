@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/real-mine/real-mine",
+    "pages/guide/guide",
+    "pages/logs/logs",
+    "info/主楼/主楼",
+    "pages/map/map",
+    "pages/search/search"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "哈工大（深圳）掌上校园"
+  },
+  "tabBar": {
+    "selectedColor": "7700FF",
+    "list": [
+      {
+      "pagePath":"pages/home/home",
+      "text": "首页",
+      "iconPath": "icon/home_1.png",
+      "selectedIconPath": "icon/home_2.png"
+    },
+    {
+      "pagePath":"pages/guide/guide",
+      "text": "导览",
+      "iconPath": "icon/giude_1.png",
+      "selectedIconPath": "icon/guide_2.png"
+    },
+
+    {
+      "pagePath":"pages/real-mine/real-mine",
+      "text": "我的",
+      "iconPath": "icon/me_1.png",
+      "selectedIconPath": "icon/me_2.png"
+    }
+  ]
+  },
+  "permission": {
+    "scope.userLocationBackground": {
+      "desc": "位置信息将用于展示所在地区"
+    }
+  },
+  "requiredBackgroundModes": ["location"],
+
+  "sitemapLocation": "sitemap.json"
+
+}

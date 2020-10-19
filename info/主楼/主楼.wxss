@@ -1,0 +1,9 @@
+/* info/主楼/主楼.wxss */
+.bg{
+  height: 30vh;
+  width: 100vm;
+}
+.img{
+  height: 30vh;
+  width: 100%;
+}

@@ -1,0 +1,95 @@
+
+page
+{
+  overflow: hidden;
+  position: fixed;
+  background-image:url('https://ftp.bmp.ovh/imgs/2020/10/44dbd8229ac39c89.png');
+  margin: 0px;
+  height:100%;
+  background-size: 100% 100%;
+}
+
+.head
+{
+  height: 140rpx;
+  position: relative;
+}
+
+.caption
+{
+  line-height:200rpx;
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+.swiper
+{
+  margin-top: 60rpx;
+  overflow: hidden; 
+  width:750rpx;
+  height:830rpx;
+}
+
+.img1
+{
+  width:680rpx;
+  height:830rpx;
+  overflow: hidden;
+  border-radius: 50rpx;
+  margin-left: 40rpx;
+  position: relative;
+}
+
+.img2
+{
+  width:680rpx;
+  height:830rpx;
+  overflow: hidden;
+  border-radius: 50rpx;
+  margin-left: 40rpx;
+  position: relative; 
+}
+
+.img3
+{
+  width:680rpx;
+  height:830rpx;
+  overflow: hidden;
+  border-radius: 50rpx;
+  margin-left: 40rpx;
+  position: relative; 
+}
+
+.img4
+{
+  width:680rpx;
+  height:830rpx;
+  overflow: hidden;
+  border-radius: 50rpx;
+  margin-left: 40rpx;
+  position: relative; 
+}
+
+.navigation-bar
+{
+  position: relative;
+  float: left;
+  margin-top: 90rpx;
+}
+
+.nav
+{
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 35rpx;
+  width: 150rpx;
+  position: relative;
+}
+
+.img
+{
+  margin-left: 20rpx;
+  width: 60rpx;
+  height:60rpx;
+}

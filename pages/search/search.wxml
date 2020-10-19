@@ -1,0 +1,5 @@
+<view class="head" >
+  <text class="caption"> 哈工大(深圳)掌上校园</text>
+</view>
+
+<input type="text" bindinput="search"/>

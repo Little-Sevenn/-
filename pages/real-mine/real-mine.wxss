@@ -1,0 +1,38 @@
+/* pages/real-mine/real-mine.wxss */
+page
+{
+  overflow: hidden;
+  position: fixed;
+  background-image:url('https://ftp.bmp.ovh/imgs/2020/10/44dbd8229ac39c89.png');
+  margin: 0px;
+  height:100%;
+  background-size: 100% 100%;
+}
+
+.head
+{
+  height: 140rpx;
+  position: relative;
+}
+
+.caption
+{
+  line-height:200rpx;
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+.button 
+{
+  margin: 40rpx;
+  margin-top: 40rpx;
+  background-color: #9900FF;
+  width:100vm;
+  height: 7vh;
+  border-radius: 0;
+  line-height: 7vh;
+  color: white;
+  border-radius: 30rpx;
+
+}

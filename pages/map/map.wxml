@@ -1,0 +1,21 @@
+<!--引入map组件-->
+<!--下拉框被点击的话，地图界面要进行调整-->
+<map 
+  id="map"
+  latitude="{{Map[0]}}"  
+  longitude="{{Map[1]}}" 
+  scale="{{Scale}}"  
+  class="map" 
+  markers="{{markers}}"
+  polyline="{{polyline}}">
+  <!--自定义气泡框-->
+  <cover-view slot="callout">
+    <block wx:for="{{names_sites}}" wx:key="names_sites">
+      <cover-view  class="customCallout" marker-id="{{item.id}}" >
+        <cover-view class="content"> 
+          {{item.name}}
+        </cover-view>
+      </cover-view>
+    </block>
+  </cover-view>
+</map>
